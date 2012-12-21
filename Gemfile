@@ -14,6 +14,7 @@ gem 'json', "~> 1.7.5"
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
+  gem 'compass-rails', '~> 1.0.0'
   gem 'uglifier', '>= 1.0.3'
   gem "therubyracer", "~> 0.10.0" # adds a dependency on v8 javascript 
 end
