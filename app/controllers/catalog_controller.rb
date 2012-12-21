@@ -59,6 +59,11 @@ class CatalogController < ApplicationController
     config.add_facet_field 'subject_geo_facet', :label => 'Region' 
     config.add_facet_field 'subject_era_facet', :label => 'Era'  
 
+    #added for EAD:
+    config.add_facet_field 'ead_facet', :label => 'From Finding Aid'
+    config.add_facet_field 'type_facet', :label => 'Type'
+
+
     config.add_facet_field 'example_pivot_field', :label => 'Pivot Field', :pivot => ['format', 'language_facet']
 
     config.add_facet_field 'example_query_facet_field', :label => 'Publish Date', :query => {
@@ -101,6 +106,16 @@ class CatalogController < ApplicationController
     config.add_show_field 'published_vern_display', :label => 'Published:'
     config.add_show_field 'lc_callnum_display', :label => 'Call number:'
     config.add_show_field 'isbn_t', :label => 'ISBN:'
+    # Fields added for EAD Display
+    config.add_show_field 'abstract_t', :label => 'Abstract:'
+    config.add_show_field 'bibref_t', :label => 'Bibliographic references:'
+    config.add_show_field 'date_t', :label => 'Date:'
+    config.add_show_field 'language_t', :label => 'Language:'
+    config.add_show_field 'related_t', :label => 'Related resources:'
+    config.add_show_field 'haspart_t', :label => 'Has Part:'
+    config.add_show_field 'ispartof_t', :label => 'Is Part Of:'
+    config.add_show_field 'location_t', :label => 'Location:'
+
 
     # "fielded" search configuration. Used by pulldown among other places.
     # For supported keys in hash, see rdoc for Blacklight::SearchFields
