@@ -197,7 +197,6 @@ PLATFORMS
 DEPENDENCIES
   authpds-nyu (~> 0.2.5)
   blacklight (~> 4.0.1)
-  bootstrap-sass
   coffee-rails (~> 3.2.1)
   jquery-rails (~> 2.1.4)
   json (~> 1.7.5)
