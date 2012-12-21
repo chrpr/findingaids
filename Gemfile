@@ -39,3 +39,7 @@ gem "blacklight", "~> 4.0.1"
 
 # To use debugger
 # gem 'ruby-debug'
+
+gem "unicode", :platforms => [:mri_18, :mri_19]
+gem "bootstrap-sass"
+gem "authpds-nyu", :git => "https://github.com/scotdalton/authpds-nyu"
