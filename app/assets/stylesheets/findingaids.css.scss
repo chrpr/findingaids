@@ -1,2 +1,24 @@
 @import "nyulibraries";
 @import "blacklight";
+
+body {
+  padding-top: 0;
+}
+
+.constraint {
+  * { text-indent: 0; }
+  .filterValue {
+    span { margin: 0px 4px; }
+    .label {
+      color: white !important;
+    }
+  }
+}
+
+.row, #content {
+  margin-left: 0 !important;
+}
+
+#search {
+  margin-bottom: $paddingStandard;
+}

@@ -20,7 +20,7 @@ module Views
         meta << raw(render_head_content)
       end
       
-      def title 
+      def title
         "Search"
       end
 
@@ -74,8 +74,8 @@ module Views
         "$('input#q').focus();" if params[:q].to_s.empty? and params[:f].to_s.empty? and params[:id].nil?
       end
       
-      def body_class
-       
+      def show_tabs
+        false
       end
       
     end

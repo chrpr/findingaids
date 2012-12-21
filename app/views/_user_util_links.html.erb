@@ -1,0 +1,10 @@
+<div id="user_util_links" class="sidebar-section">
+<h2>My Workspace</h2>
+<ul>
+    <li><%= link_to t('blacklight.header_links.bookmarks'), bookmarks_path %></li>
+<% if current_user %>
+    <li><%= link_to t('blacklight.header_links.saved_searches'), saved_searches_path %></li>
+<% end %>
+    <li><%= link_to t('blacklight.header_links.search_history'), search_history_path %></li>
+</ul>
+</div>
