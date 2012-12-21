@@ -15,4 +15,5 @@
 //
 // Required by Blacklight
 //= require blacklight/blacklight
+//= require nyulibraries
 //= require_tree .
